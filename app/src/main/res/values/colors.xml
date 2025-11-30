@@ -7,4 +7,10 @@
     <color name="accent_gold">#D9A54A</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+    <!-- Replacing old names for compatibility -->
+    <color name="green_700">#436C4F</color>
+    <color name="orange_500">#D9A54A</color>
+    <color name="gray_600">#355C42</color>
+    <color name="gray_500">#C9A889</color>
+    <color name="orange_700">#C9A889</color>
 </resources>

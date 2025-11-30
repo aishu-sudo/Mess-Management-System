@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartMess">
         <activity
+            android:name=".Expense_List"
+            android:exported="false" />
+        <activity
+            android:name=".Add_Meal"
+            android:exported="false" />
+        <activity
+            android:name=".Meal_Dashboard"
+            android:exported="false" />
+        <activity
             android:name=".LogIn"
             android:exported="false" />
         <activity
