@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "110600425012",
+    "project_id": "smart-mess-f8f6b",
+    "storage_bucket": "smart-mess-f8f6b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110600425012:android:c2e4ce89537f6c5b2a4461",
+        "android_client_info": {
+          "package_name": "edu.ewubd.smartmess"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110600425012-jlao5f8f49248f4kcu76772atfohj9hm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.ewubd.smartmess",
+            "certificate_hash": "b78f3bf1075fbc0e0c9104d6a40c6f73299fc9ae"
+          }
+        },
+        {
+          "client_id": "110600425012-7hhd2ili2f7t706cijg25jgseujqvn57.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsR4dmje49b9g3yNhEHABcSW6Lmd1LsH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "110600425012-7hhd2ili2f7t706cijg25jgseujqvn57.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

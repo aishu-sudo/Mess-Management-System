@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -19,7 +20,6 @@
             android:layout_height="24dp"
             android:src="@drawable/calender" />
 
-
         <EditText
             android:id="@+id/etDate"
             android:layout_width="wrap_content"
@@ -27,14 +27,14 @@
             android:background="@android:drawable/editbox_background"
             android:focusable="false"
             android:clickable="true"
-
             android:hint="Select Date"
             android:paddingLeft="8dp"
             android:textSize="16sp"
-            android:layout_marginEnd="180dp"/>
+            android:layout_marginEnd="180dp" />
 
+        <!-- Add Meal button -->
         <Button
-            android:id="@+id/btnLogout"
+            android:id="@+id/btnAddMeal"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:text="+ Add Meal"
@@ -42,7 +42,7 @@
             android:textColor="@color/dark_green"
             android:paddingHorizontal="0dp"
             android:textAllCaps="false"
-            android:textSize="10sp"/>
+            android:textSize="10sp" />
 
     </LinearLayout>
 
@@ -54,6 +54,7 @@
         android:weightSum="4"
         android:paddingTop="8dp">
 
+        <!-- Breakfast card -->
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -61,20 +62,24 @@
             android:orientation="vertical"
             android:background="#FEF7E0"
             android:padding="12dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Breakfast"
                 android:textSize="14sp"
-                android:textColor="@color/dark_green"/>
+                android:textColor="@color/dark_green" />
+
             <TextView
+                android:id="@+id/tvBreakfastCount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1 meals"
+                android:text="0 meals"
                 android:textSize="12sp"
-                android:textColor="@color/dark_green"/>
+                android:textColor="@color/dark_green" />
         </LinearLayout>
 
+        <!-- Lunch card -->
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -83,20 +88,24 @@
             android:background="#E7F8EE"
             android:padding="12dp"
             android:layout_marginLeft="8dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Lunch"
                 android:textSize="14sp"
-                android:textColor="@color/dark_green"/>
+                android:textColor="@color/dark_green" />
+
             <TextView
+                android:id="@+id/tvLunchCount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="0 meals"
                 android:textSize="12sp"
-                android:textColor="@color/dark_green"/>
+                android:textColor="@color/dark_green" />
         </LinearLayout>
 
+        <!-- Dinner card -->
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -105,20 +114,24 @@
             android:background="#E8F0FF"
             android:padding="12dp"
             android:layout_marginLeft="8dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Dinner"
                 android:textSize="14sp"
-                android:textColor="@color/dark_green"/>
+                android:textColor="@color/dark_green" />
+
             <TextView
+                android:id="@+id/tvDinnerCount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="0 meals"
                 android:textSize="12sp"
-                android:textColor="@color/dark_green"/>
+                android:textColor="@color/dark_green" />
         </LinearLayout>
 
+        <!-- Total card -->
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -127,18 +140,21 @@
             android:background="#F8E7FF"
             android:padding="12dp"
             android:layout_marginLeft="8dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Total Meals"
                 android:textSize="12sp"
-                android:textColor="@color/dark_green"/>
+                android:textColor="@color/dark_green" />
+
             <TextView
+                android:id="@+id/tvTotalCount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1 meals"
+                android:text="0 meals"
                 android:textSize="12sp"
-                android:textColor="@color/dark_green"/>
+                android:textColor="@color/dark_green" />
         </LinearLayout>
 
     </LinearLayout>
@@ -152,7 +168,9 @@
         android:textStyle="bold"
         android:paddingTop="20dp"
         android:paddingBottom="10dp"
-        android:textColor="@color/primary_green"/>
+        android:textColor="@color/primary_green" />
+
+    <!-- Header row -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -160,6 +178,7 @@
         android:background="@color/soft_brown"
         android:paddingTop="8dp"
         android:paddingBottom="8dp">
+
         <TextView
             android:layout_width="32dp"
             android:layout_height="wrap_content"
@@ -169,7 +188,8 @@
             android:textSize="10sp"
             android:padding="8dp"
             android:gravity="center"
-            android:textColor="@color/dark_green"/>
+            android:textColor="@color/dark_green" />
+
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
@@ -178,7 +198,8 @@
             android:textStyle="bold"
             android:textSize="10sp"
             android:gravity="center"
-            android:textColor="@color/dark_green"/>
+            android:textColor="@color/dark_green" />
+
         <TextView
             android:layout_width="32dp"
             android:layout_height="wrap_content"
@@ -187,7 +208,8 @@
             android:textStyle="bold"
             android:textSize="10sp"
             android:gravity="center"
-            android:textColor="@color/dark_green"/>
+            android:textColor="@color/dark_green" />
+
         <TextView
             android:layout_width="32dp"
             android:layout_height="wrap_content"
@@ -196,9 +218,9 @@
             android:textStyle="bold"
             android:textSize="10sp"
             android:gravity="center"
-            android:textColor="@color/dark_green"/>
-        <TextView
+            android:textColor="@color/dark_green" />
 
+        <TextView
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -206,14 +228,15 @@
             android:textStyle="bold"
             android:textSize="10sp"
             android:gravity="center"
-            android:textColor="@color/dark_green"/>
+            android:textColor="@color/dark_green" />
     </LinearLayout>
+
     <!-- ListView for entries -->
     <ListView
         android:id="@+id/listMeals"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:dividerHeight="1dp"
-        android:background="@color/light_cream"/>
+        android:background="@color/light_cream" />
 
 </LinearLayout>
